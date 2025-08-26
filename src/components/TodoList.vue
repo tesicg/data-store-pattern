@@ -30,6 +30,14 @@
             >
                 Clear completed ({{ completedCount }})
             </button>
+
+            <button
+                @click="reset"
+                class="reset-btn"
+                title="Clear everything and return to initial 3 todos"
+            >
+                Reset
+            </button>
         </div>
 
         <ul v-if="allTodos.length > 0" class="todo-list-items">
@@ -56,6 +64,7 @@ const {
     addTodo,
     clearCompleted,
     toggleAll,
+    reset,
 } = useTodoStore()
 
 // Local component state
@@ -147,6 +156,22 @@ function handleAddTodo(): void {
 
 .clear-completed-btn:hover {
     background: #ef4444;
+    color: white;
+}
+
+.reset-btn {
+    padding: 8px 16px;
+    border: 2px solid #6b7280;
+    background: white;
+    color: #6b7280;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.reset-btn:hover {
+    background: #6b7280;
     color: white;
 }
 
