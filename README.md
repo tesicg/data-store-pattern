@@ -2,7 +2,7 @@
 
 A comprehensive demonstration of **Michael Thiessen's Data Store Pattern** using Vue 3, Composition API, and TypeScript with full type safety.
 
-## 🏪 What is the Data Store Pattern?
+## What is the Data Store Pattern?
 
 The Data Store Pattern is a lightweight state management solution for Vue applications that provides:
 
@@ -22,7 +22,7 @@ This demonstrates the core principles:
 4. Components never directly mutate the state
 5. Full type safety with TypeScript
 
-## 🛠️ Getting Started
+## Getting Started
 
 1. **Install dependencies:**
 
